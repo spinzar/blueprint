@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Dingo\\Blueprint\\": "src"
+            "Spinzar\\Blueprint\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Dingo\\Blueprint\\Tests\\": "tests"
+            "Spinzar\\Blueprint\\Tests\\": "tests"
         }
     },
      "extra": {
