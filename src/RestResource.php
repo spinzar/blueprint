@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Blueprint;
+namespace Spinzar\Blueprint;
 
 use Illuminate\Support\Collection;
 use ReflectionClass;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Blueprint\Annotation\Method;
+namespace Spinzar\Blueprint\Annotation\Method;
 
 /**
  * @Annotation

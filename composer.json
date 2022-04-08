@@ -1,7 +1,7 @@
 {
     "name": "spinzar/blueprint",
     "description": "API Blueprint documentation generator.",
-    "keywords": ["blueprint", "api", "laravel", "dingo", "docs"],
+    "keywords": ["blueprint", "api", "laravel", "spinzar", "docs"],
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -32,7 +32,7 @@
     },
      "extra": {
         "branch-alias": {
-            "dev-main": "1.0-dev"
+            "dev-main": ""
         }
     },
     "minimum-stability": "dev",

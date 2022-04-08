@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Blueprint;
+namespace Spinzar\Blueprint;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
@@ -17,7 +17,7 @@ abstract class Section
     protected function getAnnotationByType($type)
     {
         return Arr::first($this->annotations, function ($key, $annotation) use ($type) {
-            $type = sprintf('Dingo\\Blueprint\\Annotation\\%s', $type);
+            $type = sprintf('Spinzar\\Blueprint\\Annotation\\%s', $type);
 
             return is_object($annotation) ? $annotation instanceof $type : $key instanceof $type;
         });

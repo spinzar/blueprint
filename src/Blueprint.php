@@ -1,10 +1,10 @@
 <?php
 
-namespace Dingo\Blueprint;
+namespace Spinzar\Blueprint;
 
-use Dingo\Blueprint\Annotation\Attribute;
-use Dingo\Blueprint\Annotation\NamedType;
-use Dingo\Blueprint\Annotation\Parameter;
+use Spinzar\Blueprint\Annotation\Attribute;
+use Spinzar\Blueprint\Annotation\NamedType;
+use Spinzar\Blueprint\Annotation\Parameter;
 use ReflectionClass;
 use RuntimeException;
 use Illuminate\Support\Str;
@@ -65,11 +65,11 @@ class Blueprint
      */
     protected function registerAnnotationLoader()
     {
-        $this->reader->addNamespace('Dingo\\Blueprint\\Annotation');
-        $this->reader->addNamespace('Dingo\\Blueprint\\Annotation\\Method');
+        $this->reader->addNamespace('Spinzar\\Blueprint\\Annotation');
+        $this->reader->addNamespace('Spinzar\\Blueprint\\Annotation\\Method');
 
         AnnotationRegistry::registerLoader(function ($class) {
-            $path = __DIR__.'/'.str_replace(['Dingo\\Blueprint\\', '\\'], ['', DIRECTORY_SEPARATOR], $class).'.php';
+            $path = __DIR__.'/'.str_replace(['Spinzar\\Blueprint\\', '\\'], ['', DIRECTORY_SEPARATOR], $class).'.php';
 
             if (file_exists($path)) {
                 require_once $path;
@@ -395,8 +395,8 @@ class Blueprint
      * Append a response subsection to an action.
      *
      * @param string                               $contents
-     * @param \Dingo\Blueprint\Annotation\Response $response
-     * @param \Dingo\Blueprint\RestResource            $resource
+     * @param \Spinzar\Blueprint\Annotation\Response $response
+     * @param \Spinzar\Blueprint\RestResource            $resource
      *
      * @return void
      */
@@ -425,8 +425,8 @@ class Blueprint
      * Append a request subsection to an action.
      *
      * @param string                              $contents
-     * @param \Dingo\Blueprint\Annotation\Request $request
-     * @param \Dingo\Blueprint\RestResource           $resource
+     * @param \Spinzar\Blueprint\Annotation\Request $request
+     * @param \Spinzar\Blueprint\RestResource           $resource
      *
      * @return void
      */

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Blueprint;
+namespace Spinzar\Blueprint;
 
 use Illuminate\Support\Str;
 use RuntimeException;
@@ -26,7 +26,7 @@ class Action extends Section
     /**
      * Parent resource of the action.
      *
-     * @var \Dingo\Blueprint\RestResource
+     * @var \Spinzar\Blueprint\RestResource
      */
     protected $resource;
 
@@ -67,7 +67,7 @@ class Action extends Section
     /**
      * Get the actions version annotation.
      *
-     * @return \Dingo\Blueprint\Annotation\Versions|null
+     * @return \Spinzar\Blueprint\Annotation\Versions|null
      */
     public function getVersions()
     {
@@ -79,7 +79,7 @@ class Action extends Section
     /**
      * Get the actions response annotation.
      *
-     * @return \Dingo\Blueprint\Annotation\Response|null
+     * @return \Spinzar\Blueprint\Annotation\Response|null
      */
     public function getResponse()
     {
@@ -91,7 +91,7 @@ class Action extends Section
     /**
      * Get the actions request annotation.
      *
-     * @return \Dingo\Blueprint\Annotation\Request|null
+     * @return \Spinzar\Blueprint\Annotation\Request|null
      */
     public function getRequest()
     {
@@ -103,7 +103,7 @@ class Action extends Section
     /**
      * Get the actions transaction annotation.
      *
-     * @return \Dingo\Blueprint\Annotation\Transaction|null
+     * @return \Spinzar\Blueprint\Annotation\Transaction|null
      */
     public function getTransaction()
     {
@@ -179,7 +179,7 @@ class Action extends Section
     /**
      * Set the parent resource on the action.
      *
-     * @param \Dingo\Blueprint\RestResource $resource
+     * @param \Spinzar\Blueprint\RestResource $resource
      *
      * @return void
      */

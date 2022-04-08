@@ -1,6 +1,6 @@
 <?php
 
-namespace Dingo\Blueprint\Tests\Stubs;
+namespace Spinzar\Blueprint\Tests\Stubs;
 
 /**
  * @Resource("Activity")
